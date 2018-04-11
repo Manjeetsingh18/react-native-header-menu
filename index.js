@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
-
-AppRegistry.registerComponent('headermenu', () => App);
+//import App from './App';
+import { Home } from './src/containers';
+AppRegistry.registerComponent('headermenu', () => Home);

@@ -30,8 +30,8 @@ class DropdownMenu extends Component {
             bgColor: 'grey',
             tintColor: 'white',
             selectItemColor: "red",
-            arrowImg: '../images/dropdown_arrow.png',
-            checkImage: '../images/menu_check.png'
+            arrowImg: '../../images/dropdown_arrow.png',
+            checkImage: '../../images/menu_check.png'
         };
 
     }
@@ -39,7 +39,7 @@ class DropdownMenu extends Component {
     renderChcek(index, title) {
         var activityIndex = this.state.activityIndex;
         if (this.state.selectIndex[activityIndex] == index) {
-            var checkImage = this.props.checkImage ? this.props.checkImage : require('./img/menu_check.png');
+            var checkImage = this.props.checkImage ? this.props.checkImage : require('../../images/menu_check.png');
             return (
                 <View style={{ flex: 1, justifyContent: 'space-between', alignItems: "center", paddingHorizontal: 15, flexDirection: 'row' }} >
                     <Text style={{ color: this.props.selectItemColor ? this.props.selectItemColor : this.defaultConfig.selectItemColor }} >{title}</Text>
@@ -156,7 +156,7 @@ class DropdownMenu extends Component {
     }
 
     renderDropDownArrow(index) {
-        var icon = this.props.arrowImg ? this.props.arrowImg : require('./img/dropdown_arrow.png');
+        var icon = this.props.arrowImg ? this.props.arrowImg : require('../../images/dropdown_arrow.png');
 
         return (
             <Animated.Image
