@@ -17,9 +17,10 @@ export default class Home extends Component {
     render() {
         return (
             <View style={{ flex: 1 }} >
+                <View style={{ height: 64, backgroundColor: 'red' }} />
                 <HeaderMenu
                     style={{ flex: 1 }}
-                                                               //set the icon of the selected item, default is a check mark
+                    //set the icon of the selected item, default is a check mark
                     bgColor={"red"}                            //the background color of the head, default is grey
                     tintColor={"white"}                        //the text color of the head, default is white
                     selectItemColor={"red"}                    //the text color of the selected item, default is red
